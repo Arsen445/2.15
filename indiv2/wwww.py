@@ -16,6 +16,7 @@ if __name__ == "__main__":
     with open(f, "r", encoding="utf-8") as test:
         
         b = [f for line in test for f in line.split()]
+        test.close()
         print(b)
         print(b[0])
         print(type(b[0]))

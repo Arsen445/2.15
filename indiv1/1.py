@@ -17,5 +17,5 @@ if __name__ == "__main__":
                 print(s1)
             if not s1:
                 break
-            
+        test.close()
      
