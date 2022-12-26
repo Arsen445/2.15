@@ -12,24 +12,16 @@ if __name__ == "__main__":
     
     print("Введите путь к файлу")
     
-    f = input()
+    file = input()
     
-    with open(f, "r", encoding = "utf-8") as test:
+    with open(file, "r", encoding = "utf-8") as test:
         b = [f for line in test for f in line.split()]
-        
-    print(b)
-    print(b[0])
-    print(type(b[0]))
-        
-    i = 0
-        
-    while i < len(b):
-        q = b[i]
-        print(b[i])
-        print(type(b[i]))
-            
-        if a[1] == q.lower() or a[2] == q.lower() or a[3] == q.lower():
+
+           
+    for i in b:
+        if a[1] == i.lower() or a[2] == i.lower() or a[3] == i.lower():
             print("Слово не имеет ошибок")
         else:
             print("В слове ошибка или его нет в списке")
-        i = i + 1
+
+
